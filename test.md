@@ -38,6 +38,11 @@ List all the namespaces <br>
 List the PODs in all namespaces
 > kubectl get pods --all-namespaces
 
+Optional: enable K8S UI
+> kubectl.exe proxy --port=0
+
+In Google Chrome, navigate to 127.0.0.1:{port_number}/ui
+
 
 # Deploy Restaurant Review Application
 
