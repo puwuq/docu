@@ -1,8 +1,9 @@
-heat_template_version: 2013-05-23
+heat_template_version: 2018-09-21
 
-description: |
+description:
   A simple Heat template that spins up a 3 Tier App with 1 Web Server, 1 App Server,
   and 1 DB Server on logical networks and attaches them to security groups (HOT template in YAML).
+
 parameters:
   external_network_id:
     type: string
@@ -24,7 +25,6 @@ parameters:
     type: string
     description: Name of image to use for servers
     default: cirros_new
-
 
 resources:
   # Create the web logical switch and configure DHCP.
@@ -227,7 +227,6 @@ resources:
         - port: { get_resource: web-svr-02_port0 }
 
 #Create Load Balancer
-
   load_balancer:
     type: OS::Neutron::LBaaS::LoadBalancer
     properties:
@@ -257,7 +256,6 @@ resources:
       pool: { get_resource: lb_pool }
 
 #Add web instances to LBaaS Pool
-
   WebPoolMember1:
     type: OS::Neutron::LBaaS::PoolMember
     properties:
