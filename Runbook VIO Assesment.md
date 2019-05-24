@@ -1,3 +1,5 @@
+# This is a TEST of GITPOD #
+
 # Runbook VIO Assesment:
 
 ## Section1:
@@ -6,7 +8,7 @@
 
 Scope of this section is to show case the overall system architecture, give an overview of all the involved components and highlight the baseline integration parts.
 
-#### Installation Check 
+#### Installation Check
 
 - Open vCenter
     - Home Icon
@@ -24,10 +26,10 @@ Scope of this section is to show case the overall system architecture, give an o
     -- Verify System
     - Show Fabric - Hosts
     - Show Switching
-    - Show Routing 
+    - Show Routing
     - Show Firewalling
 
-## Section2: 
+## Section2:
 ### Manual OpenStack Provisioning:
 
 Scope of this section is to use VIO via the Horizon GUI and provisioning a baseline Network/Service/VM. Afterwards all the corresponding configuration should be also reflected in NSX-T and will be double-checked and explained.
@@ -65,7 +67,7 @@ Scope of this section is to use VIO via the Horizon GUI and provisioning a basel
 #### Verification in NSX-T:
 
 - Switching
-	- Verify Switch manual_web_sn is created as overlay with a VNI 
+	- Verify Switch manual_web_sn is created as overlay with a VNI
 	- Verify Switch is part of the transport Zone
 	- Check Switch properties
 	-- Admin Status
@@ -75,7 +77,7 @@ Scope of this section is to use VIO via the Horizon GUI and provisioning a basel
 	-- Check Mode of the Router
 	-- Check the TZ
 	-- Check Services / NAT for external reachability
-	- Check Firewall 
+	- Check Firewall
 	-- Check if web-sg was created
 	-- check if rules according to OpenStack are correct
 
@@ -93,7 +95,7 @@ Scope of this section is to use VIO via the Horizon GUI and provisioning a basel
 
 #### Verify Instances
 
-- Check Projects -> Compute -> Instances if the instance is up and running 
+- Check Projects -> Compute -> Instances if the instance is up and running
 - Check Overview
 -- Specs
 -- IP Addresses
